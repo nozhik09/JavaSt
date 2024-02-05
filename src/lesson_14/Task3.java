@@ -5,22 +5,22 @@ public class Task3 {
 
         String[] array = {"Hello", "world", "Java"};
         String str = "Java";
-        int index = (findString(array , str));
-        if (index!=-1) {
-            System.out.printf("Строка " + str + " найдена в массиве на индексе " + index);
-        }
-else{System.out.println("Строка " + str + " не найдена в массиве");
+        int index = (findString(array, str));
+        if (index != -1) {
+            System.out.printf("Строка %s найдена в массиве на индексе %d" ,str , index);
+        } else {
+            System.out.printf("Строка %s не найдена в массиве" , str);
 
         }
     }
 
 
-    public static int findString(String[] array , String str){
+    public static int findString(String[] array, String str) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i]==str) return i;
+            if (array[i] == str) return i;
 
         }
-return -1;
+        return -1;
 
     }
 
