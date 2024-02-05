@@ -17,7 +17,7 @@ public class Task3 {
 
     public static int findString(String[] array, String str) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == str) return i;
+            if (array[i].equals(str)) return i;
 
         }
         return -1;
