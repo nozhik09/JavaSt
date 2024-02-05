@@ -5,8 +5,8 @@ public class Task4 {
         String str = "Hello";
         String second = fristAndSecondWords(str);
 
-        System.out.println(str);
-        System.out.println(second);
+        System.out.println("Строка целиком " + str);
+        System.out.println("Строка из 2го и 3го символа входящей строки, переведенная в верхний регистр - " + second);
     }
 
 

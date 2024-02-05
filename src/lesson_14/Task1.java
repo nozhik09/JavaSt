@@ -8,10 +8,6 @@ int i = 1;
 int j = 5;
 swap(array , i, j);
 
-
-
-
-
     }
 
 public static void swap (int[ ] array , int i , int j){
