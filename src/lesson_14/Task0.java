@@ -15,7 +15,6 @@ public class Task0 {
                 c-=32;
             }
             System.out.print(c);
-
         }
 
 

@@ -3,7 +3,7 @@ package lesson_14;
 public class Task3 {
     public static void main(String[] args) {
 
-        String[] array = {"Hello", "world", "Java"};
+        String[] array = {"Hello", "world", "Java" , null};
         String str = "Java";
         int index = (findString(array, str));
         if (index != -1) {
