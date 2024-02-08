@@ -17,6 +17,7 @@ public class Employee {
 
     public void info(){
         System.out.printf("Меня зовут %s, мне %d лет, у меня %f Евро зарплата ", name , age, salary);
+        System.out.println();
 
 
     }
