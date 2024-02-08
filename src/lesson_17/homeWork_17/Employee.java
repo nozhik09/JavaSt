@@ -10,8 +10,7 @@ public class Employee {
 
     public Employee(String name, int age , double salary){
         if (age<18 || age>=70) System.out.println("Не подходящий возраст для работы");
-        if (salary<=0) System.out.println(" я не рвботаю за бесплатно))");
-
+        if (salary<=0) System.out.println("Я не рвботаю за бесплатно))");
 
         this.name = name;
         this.age=age;
