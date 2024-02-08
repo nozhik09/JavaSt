@@ -4,7 +4,7 @@ public class CatMain {
 
 
     public static void main(String[] args) {
-CatIncapsul cat = new CatIncapsul("Test", " Name" , 2 , 5);
+CatIncapsul cat = new CatIncapsul("Test", " Name" , 10 , 5);
 cat.sayMeom();
 String catName =cat.getName();
         System.out.println(catName);

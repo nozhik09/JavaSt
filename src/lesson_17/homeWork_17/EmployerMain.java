@@ -5,10 +5,18 @@ public class EmployerMain {
 
         Employee employee= new Employee("Вася " , 28 , 1600);
         employee.info();
+        employee.setName("Игорь");
+        employee.setAge(35);
+        employee.setSalary(1800);
+
+        employee.info();
 
 
-        Employee employee1=new Employee("Петя", 30 , 1652 );
+        Employee employee1=new Employee("Джон", 31 , 2500);
         employee1.info();
+
+
+
 
     }
 
