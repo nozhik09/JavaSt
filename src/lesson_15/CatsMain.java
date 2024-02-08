@@ -24,6 +24,9 @@ public class CatsMain {
         System.out.println("======================");
         cat.whoAmI();
         cat2.whoAmI();
+
+
+
     }
 
 
