@@ -9,7 +9,7 @@ public class RubberArray {
 
     }
 
-    void add(int number) {
+    public void add(int number) {
 
         if (cursor > array.length * 0.9) {
             expandArray(); //методж расширающий наш массив
@@ -30,7 +30,7 @@ public class RubberArray {
 
     }
 
-    void expandArray() {
+    private void expandArray() {
         //созать новый массив большего размера
         // переписать значения из старого массива в новый
         // перебросить ссылку
@@ -42,7 +42,8 @@ public class RubberArray {
         array = newArray; //Перебросить ссылки
 
     }
-    void add(int...inst) {
+
+    public void add(int... inst) {
 //inst - я могу с ним обращаться так же как и с сыллкой на массив
         for (int i = 0; i < inst.length; i++) {
             add(inst[i]);
@@ -50,20 +51,73 @@ public class RubberArray {
 
 
     }
-public int size(){
+
+    public int size() {
         return cursor;
-}
+    }
 
-public int get(int index){
-        if (index>=0 && index<cursor){
-            return array[index];}
-        else return Integer.MIN_VALUE;
+    public int get(int index) {
+        if (index >= 0 && index < cursor) {
+            return array[index];
+        } else return Integer.MIN_VALUE;
         // TODO Поправить
-}
+    }
+
+    public RubberArray(int[] ints) {
+        array = new int[ints.length * 2];
+        for (int i = 0; i < ints.length; i++) {
+            add(ints[i]);
+
+        }
+
+
+    }
+
+    public int indexOf(int value) {
+        for (int i = 0; i < cursor; i++) {
+            if (array[i] == value) return i;
+        }
+
+        return -1;
+
+
+    }
+
+    // Удаление
+    public int remove(int index) {
+        if (index < 0 && index >= cursor) {
+            return Integer.MIN_VALUE;
+        }
+
+        int value = array[index];
+        for (int i = index; i < cursor - 1; i++) {
+
+            if (i >= index) {
+
+                array[i] = array[i + 1];
+            }
+
+        }
+        cursor++;
+        return value;
+    }
+
+    public boolean removeByValue(int value) {
+        // Понять есть ли такой елемент в нашем массиве
+        // Если нет - вернуть false и прекраить
+        // если есть получить его индекс
+        // переиспользовать метод удаляющий по индексу
+       int index = indexOf(value);
+       if (index==-1)return false;
+       remove(index);
+       return true;
+
+        }
 
 
 
-}
+    }
+
       /*
       1.Динамическое изменение массива
       2. Добавлять в массив елементы

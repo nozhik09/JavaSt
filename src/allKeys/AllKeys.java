@@ -11,7 +11,7 @@ public class AllKeys {
     CTR + D === БЫСТРНАЯ КОПИЯ СТРОКИ
     ALT + SHIFT + СТРЕЛОЧКИ === ПЕРЕМЕСТИТЬ СТРОКУ ВВЕРХ НИЗ
     ALT +SHIFT + кликать мышкой === писать в нескольких строках одновреиенно
-
+CTR + ALT + стрелка влево == dthyenm rehcjh yf ghtl gjpbwb.
 
      */
 
