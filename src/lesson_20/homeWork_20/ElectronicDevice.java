@@ -58,4 +58,9 @@ public class ElectronicDevice {
 
     }
 
+    public void discharge(){
+        precent-=10;
+
+    }
+
 }

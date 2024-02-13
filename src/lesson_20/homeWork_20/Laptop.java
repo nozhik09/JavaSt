@@ -16,8 +16,14 @@ public class Laptop extends ElectronicDevice {
     }
 
     public void playGame() {
-        turnOn();
+        if (getPrecent()>0){
+        turnOn();}
+        else {System.out.println(" ноутбук необходимо зарядить");}
         System.out.println(" Играем в игру");
+        for (int i = 0; i <getPrecent(); i++) {
+            discharge();
+            System.out.println(" заряд ноутбука " + getPrecent());
+        }
         if (getPrecent()<=0) {
             turnOff();
         }
@@ -26,11 +32,22 @@ public class Laptop extends ElectronicDevice {
     }
 
     public void watchMovie() {
-        turnOn();
+        if (getPrecent()>0){
+            turnOn();}
+        else {System.out.println(" ноутбук необходимо зарядить");}
         System.out.println("Самотеть фильм");
-        if (getPrecent()<=0) turnOff();
+        for (int i = 0; i <getPrecent(); i++) {
+            discharge();
+            System.out.println(" заряд ноутбука " + getPrecent());
+        }
+        if (getPrecent()<=0) {
+            turnOff();
+        }
 
     }
+
+
+
 
 
     public int getRam() {
