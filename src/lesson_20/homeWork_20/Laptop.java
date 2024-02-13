@@ -18,6 +18,9 @@ public class Laptop extends ElectronicDevice {
     public void playGame() {
         turnOn();
         System.out.println(" Играем в игру");
+        if (getPrecent()<=0) {
+            turnOff();
+        }
 
 
     }
@@ -25,6 +28,7 @@ public class Laptop extends ElectronicDevice {
     public void watchMovie() {
         turnOn();
         System.out.println("Самотеть фильм");
+        if (getPrecent()<=0) turnOff();
 
     }
 

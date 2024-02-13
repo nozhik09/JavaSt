@@ -36,6 +36,10 @@ public class ElectronicDevice {
         BatteryPower = batteryPower;
     }
 
+    public void setPrecent(int precent) {
+        this.precent = precent;
+    }
+
     public void turnOn() {
 
         if (precent > 0) {

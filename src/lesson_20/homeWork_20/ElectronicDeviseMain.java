@@ -9,7 +9,7 @@ public class ElectronicDeviseMain {
 
         System.out.println(smartphone.toStingg());
         smartphone.charging(50);
-        Laptop laptop = new Laptop(" ThinkPad ", 4000, 90, 16, 1000);
+        Laptop laptop = new Laptop(" ThinkPad ", 4000, 0, 16, 1000);
         System.out.println(laptop.toStingg());
         laptop.turnOn();
         laptop.watchMovie();
