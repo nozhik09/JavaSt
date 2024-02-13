@@ -36,7 +36,7 @@ public class Laptop extends ElectronicDevice {
         if (getPrecent()>0){
             turnOn();}
         else {System.out.println(" ноутбук необходимо зарядить");}
-        System.out.println("Самотеть фильм");
+        System.out.println("Смотреть фильм");
         for (int i = 0; i <getPrecent(); i++) {
             discharge();
             System.out.println(" заряд ноутбука " + getPrecent());
