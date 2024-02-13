@@ -17,9 +17,10 @@ public class Laptop extends ElectronicDevice {
 
     public void playGame() {
         if (getPrecent()>0){
-        turnOn();}
+            turnOn();
+            System.out.println(" Играем в игру");}
         else {System.out.println(" ноутбук необходимо зарядить");}
-        System.out.println(" Играем в игру");
+
         for (int i = 0; i <getPrecent(); i++) {
             discharge();
             System.out.println(" заряд ноутбука " + getPrecent());

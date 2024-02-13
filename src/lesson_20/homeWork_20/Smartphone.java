@@ -19,7 +19,7 @@ public class Smartphone extends ElectronicDevice {
                 percent += 10;
             }
         }
-        System.out.println("Телофон заряжен " + percent + "%");
+        System.out.println("Телефон заряжен " + percent + "%");
         return percent;
     }
 
