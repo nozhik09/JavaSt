@@ -7,13 +7,13 @@ public class ElectronicDevice {
 
     private int BatteryPower;
 
-    private int precent ;
+    private int precent;
 
 
-    public ElectronicDevice(String name, int batteryPower, int precent ) {
+    public ElectronicDevice(String name, int batteryPower, int precent) {
         this.model = name;
-        BatteryPower = batteryPower;
-        this.precent=precent;
+       this.BatteryPower = batteryPower;
+        this.precent = precent;
     }
 
     public int getPrecent() {
@@ -36,21 +36,22 @@ public class ElectronicDevice {
         BatteryPower = batteryPower;
     }
 
-    public void turnOn(){
+    public void turnOn() {
 
-        if (precent>0){
-        System.out.println("Устройство " + model + "Включается");}
+        if (precent > 0) {
+            System.out.println("Устройство " + model + "Включается");
+        }
     }
 
-public void turnOff(){
-    System.out.println("Устройство " + model + "Выключается");
+    public void turnOff() {
+        System.out.println("Устройство " + model + "Выключается");
 
-}
+    }
 
 
-public String toStingg(){
+    public String toStingg() {
         return "Устройство " + model + " Емкость Аккамулятора " + BatteryPower;
 
-}
+    }
 
 }

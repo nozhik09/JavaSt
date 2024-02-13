@@ -5,7 +5,7 @@ public class Laptop extends ElectronicDevice {
 
     private int ram;
 
-    private int memory ;
+    private int memory;
 
 
     public Laptop(String name, int batteryPower, int precent, int ram, int memory) {
@@ -15,22 +15,18 @@ public class Laptop extends ElectronicDevice {
 
     }
 
-public void playGame(){
+    public void playGame() {
         turnOn();
-    System.out.println(" Играем в игру");
+        System.out.println(" Играем в игру");
 
 
-}
+    }
 
-public void watchMovie(){
+    public void watchMovie() {
         turnOn();
-    System.out.println("Самотеть фильм");
+        System.out.println("Самотеть фильм");
 
-}
-
-
-
-
+    }
 
 
     public int getRam() {
@@ -51,6 +47,6 @@ public void watchMovie(){
 
     @Override
     public String toStingg() {
-        return super.toStingg() + ", Количество оперативной памяти " + ram+ ", количество памяти " + memory;
+        return super.toStingg() + ", Количество оперативной памяти " + ram + ", количество памяти " + memory;
     }
 }

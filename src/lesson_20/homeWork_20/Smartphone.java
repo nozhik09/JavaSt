@@ -12,18 +12,16 @@ public class Smartphone extends ElectronicDevice {
         this.OS = OS;
     }
 
-    public int charging(int percent){
-    for (int i = 0; i < percent; i++) {
-        if (percent<100){
-            System.out.println("Телефон заряжается" +percent);
-            percent+=10;
+    public int charging(int percent) {
+        for (int i = 0; i < percent; i++) {
+            if (percent < 100) {
+                System.out.println("Телефон заряжается" + percent);
+                percent += 10;
+            }
         }
+        System.out.println("Телофон заряжен " + percent + "%");
+        return percent;
     }
-    System.out.println("Телофон заряжен " + percent +"%");
-return percent;
-}
-
-
 
 
     public double getScreenSize() {
