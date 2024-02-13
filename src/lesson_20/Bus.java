@@ -5,12 +5,19 @@ public class Bus extends Vehicle {
    private int capacity;
     int countPassengers;
 
+    public int totalPassager;
+
 
 
     public Bus(String model, int yearManufactured, int capacity) {
         super(model, yearManufactured); //вызов конструктора родителя
         System.out.println("Bus ===============");
         this.capacity = capacity;
+        this.totalPassager=0;
+    }
+
+    public int getTotalPassager() {
+        return totalPassager;
     }
 
     public int getCountPassengers() {
@@ -21,6 +28,7 @@ public class Bus extends Vehicle {
       // Проверить. есть ли место в автобусе
       if (countPassengers<capacity){
           countPassengers++;
+          totalPassager++   ;
           System.out.println("new passenger add in the " + this.getModel());
           return true;
       }

@@ -20,6 +20,9 @@ public class TransportMain {
         bus.takePassenger();
         bus.takePassenger();
         bus.takePassenger();
+        bus.takePassenger();
+        bus.takePassenger();
+        bus.takePassenger();
         System.out.println(bus.getCountPassengers());
 
         System.out.println("==================");
@@ -39,6 +42,10 @@ public class TransportMain {
         specicalBus.stop();
         specicalBus.takePassenger();
         specicalBus.getOutPassenger();
+
+        bus.getOutPassenger();
+        bus.takePassenger();
+        System.out.println("всего перевезенно пассажиров в автобусе: " + bus.getTotalPassager());
 
 
     }
