@@ -61,18 +61,17 @@ public class Autobus {
 
     public String toString() {
 
-        StringBuilder busString  = new StringBuilder("{");
+        StringBuilder sb = new StringBuilder("{");
 
-        busString.append("Auutobas: (Driver ").append(driver.getLicenseNumber())
-                .append("Sof version ").append(autopilot.getSoftWareVersion());
+        sb.append("Auutobas: (Driver ").append(driver.getLicenseNumber())
+                .append("Sof version ").append(autopilot.getSoftWareVersion()).append("}");
+        sb.append(" passenger: ").append(getStringPassengersList());
+
+        return sb.toString();
 
 
-return busString.toString();
-
-
-
-       // return "Autobus {" + " driver " + driver.getLicenseNumber()
-              // + " ; autopilot " + autopilot.getSoftWareVersion() + "}";
+        // return "Autobus {" + " driver " + driver.getLicenseNumber()
+        // + " ; autopilot " + autopilot.getSoftWareVersion() + "}";
 
 
     }
@@ -92,9 +91,9 @@ return busString.toString();
             }
         }
         // нам надо проверить был ли добавлен хоть 1 пассажир если был отрезать 2 последних символа
-        if (sb.length()>1){
-            sb.setLength(sb.length()-2);
-            
+        if (sb.length() > 1) {
+            sb.setLength(sb.length() - 2);
+
         }
 
         sb.append("} ");

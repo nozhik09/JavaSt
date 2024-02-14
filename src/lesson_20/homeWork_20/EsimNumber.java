@@ -2,6 +2,8 @@ package lesson_20.homeWork_20;
 
 public class EsimNumber {
 
+
+    private Smartphone smartphone;
     private String operator;
 
     private int phoneNumber;
@@ -15,13 +17,6 @@ public class EsimNumber {
         this.phoneNumber = phoneNumber;
         this.moneyInAccount = moneyInAccount;
     }
-
-
-
-
-
-
-
 
 
     public String getOperator() {
