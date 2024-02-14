@@ -5,6 +5,8 @@ public class Laptop extends ElectronicDevice {
 
     private int ram;
 
+
+
     private int memory;
 
 
@@ -19,7 +21,9 @@ public class Laptop extends ElectronicDevice {
         if (getPrecent()>0){
             turnOn();
             System.out.println(" Играем в игру");}
-        else {System.out.println(" ноутбук необходимо зарядить");}
+        else {System.out.println(" ноутбук необходимо зарядить");
+
+        }
 
         for (int i = 0; i <getPrecent(); i++) {
             discharge();
@@ -27,6 +31,7 @@ public class Laptop extends ElectronicDevice {
         }
         if (getPrecent()<=0) {
             turnOff();
+
         }
 
 

@@ -6,11 +6,28 @@ public class Smartphone extends ElectronicDevice {
 
     private String OS;
 
+    private EsimNumber esimNumber;
+
     public Smartphone(String name, int batteryPower, int precent, double screenSize, String OS) {
         super(name, batteryPower, precent);
         this.screenSize = screenSize;
         this.OS = OS;
     }
+
+    public void calling(){
+        turnOn();
+
+
+
+
+
+    }
+
+
+
+
+
+
 
     public int charging(int percent) {
         for (int i = 0; i < percent; i++) {
@@ -22,6 +39,13 @@ public class Smartphone extends ElectronicDevice {
         System.out.println("Телефон заряжен " + percent + "%");
         return percent;
     }
+
+
+
+
+
+
+
 
 
     public double getScreenSize() {

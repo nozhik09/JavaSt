@@ -9,11 +9,24 @@ public class SpecicalBus extends Bus {
         super(model, yearManufactured, capacity);
         this.bicyclePlace = bicyclePlace;
     }
-    public void takePassengerWithBicycle(){
+
+    public boolean takePassengerWithBicycle() {
         // есть ли место для
         //1. пассажира
         //2. велосипеда
+        boolean isFreeForBicycle = bicycleCount < bicyclePlace;
 
+        if (isFreeForBicycle) {
+            boolean isPassenherEntry = takePassenger();
+            if (isPassenherEntry) {
+                bicycleCount++;
+                System.out.println("Пассажир и велосипед сели в авторбус" + getModel());
+                return true;
+            }
+
+        }
+        System.out.println("Пассажир и велосипед НЕ поместились");
+        return false;
 
     }
 
@@ -24,7 +37,8 @@ public class SpecicalBus extends Bus {
     public int getBicycleCount() {
         return bicycleCount;
     }
-public int example(){
+
+    public int example() {
         return super.getCapacity();
-}
+    }
 }

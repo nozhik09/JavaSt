@@ -47,6 +47,10 @@ public class ElectronicDevice {
         }
     }
 
+
+
+
+
     public void turnOff() {
         System.out.println("Устройство " + model + "Выключается");
 
