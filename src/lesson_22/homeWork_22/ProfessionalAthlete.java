@@ -4,8 +4,8 @@ public class ProfessionalAthlete extends Human  {
 
     public ProfessionalAthlete(String name) {
         super(name);
-        speedRun = 25;
-        timeRelax = 5;
+       setSpeedRun(25);
+        setTimeRelax(5) ;
     }
 }
 
