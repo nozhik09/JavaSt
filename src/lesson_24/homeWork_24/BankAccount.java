@@ -20,7 +20,7 @@ public class BankAccount implements PaymentSystem {
     public void transferMoney(int sum) {
         if (balance >= sum) {
             balance -= sum;
-            System.out.println("You send " + sum + "Euro" + "  balance on the card " + balance);
+            System.out.println("From account: " + cardNummer + " You send " + sum + "Euro" + "  balance on the card " + balance);
         }
         else System.out.println("Not enough funds in your wallet");
 
@@ -30,7 +30,7 @@ public class BankAccount implements PaymentSystem {
     public void withdrawMoney(int sum) {
         if (balance >= sum) {
             balance -= sum;
-            System.out.println("You withdrew  " + sum + "Euro" + "  balance on the card " + balance);
+            System.out.println("From account: " + cardNummer + " You withdrew  " + sum + "Euro" + "  balance on the card " + balance);
         }
         else System.out.println("Not enough funds in your wallet");
 
