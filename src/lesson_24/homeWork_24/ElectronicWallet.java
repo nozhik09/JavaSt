@@ -18,7 +18,7 @@ public class ElectronicWallet implements PaymentSystem {
     public void transferMoney(int sum) {
         if (balance >= sum) {
             balance -= sum;
-            System.out.println("From account: " + cardNummer + " You send " + sum + "Euro" + "  balance on the card " + balance);
+            System.out.println("From your Electronic Wallet: " + cardNummer + " You send " + sum + "Euro" + "  balance on the card " + balance);
         }
         else System.out.println("Not enough funds in your wallet");
 
@@ -28,7 +28,7 @@ public class ElectronicWallet implements PaymentSystem {
     public void withdrawMoney(int sum) {
         if (balance >= sum) {
             balance -= sum;
-            System.out.println("From account: " + cardNummer +  " You withdrew  " + sum + "Euro" + "  balance on the card " + balance);
+            System.out.println("From your Electronic Wallet: " + cardNummer +  " You withdrew  " + sum + "Euro" + "  balance on the card " + balance);
         }
         else System.out.println("Not enough funds in your wallet");
 
