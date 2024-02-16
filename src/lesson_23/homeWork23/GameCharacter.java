@@ -16,7 +16,7 @@ abstract public class GameCharacter {
         this.armor=armor;
     }
 
-    public abstract  void attack();
+     abstract  void attack();
 
 
     public String getName() {
