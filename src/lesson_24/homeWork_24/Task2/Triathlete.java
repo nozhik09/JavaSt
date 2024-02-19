@@ -6,6 +6,8 @@ public class Triathlete implements Swimmer,Runner{
 
     private String name;
 
+
+
     public Triathlete(String name) {
         this.name = name;
     }
@@ -25,9 +27,14 @@ public class Triathlete implements Swimmer,Runner{
         else {
             System.out.println(name + "Swim " + distance + "km");
         }
+    }
 
+    public String getName() {
+        return name;
+    }
 
-
+    public void setName(String name) {
+        this.name = name;
     }
 
     public static void main(String[] args) {
@@ -35,5 +42,7 @@ public class Triathlete implements Swimmer,Runner{
         triathlete.swim(-1);
         triathlete.run(15.12256);
     }
+
+
 
 }
