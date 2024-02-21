@@ -21,15 +21,15 @@ public class Wrappers {
 
         integer = null;
         // Автоматическое приведение типов
-        // авто-упаковка и авто- распаковка
-        Integer integer1 = 5; // Автоупаковка примитива int в ссылочный тип Integer
+        // авто-упаковка и авто-распаковка
+        Integer integer1 = 5; // Авто упаковка примитива int в ссылочный тип Integer
         System.out.println(integer1);
 
         int primitiveInt = integer1;// авто распаковка из Integer преобразовано в примитив Int
         System.out.println(integer1);
 
 
-        // сравнение обьектов  == сравнение по ссылке
+        // сравнение объектов  == сравнение по ссылке
         Integer a = 127;
         Integer b = 127;
         System.out.println(a == b);
@@ -43,7 +43,7 @@ public class Wrappers {
 
 
         // Схожие методы для всех оберточных типов
-        // ValueOf() преобразует явным образом примитив или строку в соответствкющую обертку
+        // ValueOf() преобразует явным образом примитив или строку в соответствующую обертку
 
         Integer e = Integer.valueOf(127);
         Integer f = Integer.valueOf(127);
@@ -66,9 +66,9 @@ public class Wrappers {
 
         System.out.println(e.compareTo(f)); // 127vs127-> 0
         System.out.println(e.compareTo(d));// 127vs128-> -1
-        // xxxValue() - возвращает обьект как примитив
+        // xxxValue() - возвращает объект как примитив
         Double d1  = Double.valueOf(15.65); // запаковка
-        double dPrimitive = d1.doubleValue(); // расспаковка
+        double dPrimitive = d1.doubleValue(); // распаковка
 
 
 
