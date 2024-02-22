@@ -73,8 +73,6 @@ public class Person {
             this.password=password;
         }
     }
-
-
     private boolean isPasswordValid(String password) {
         if (password==null || password.isEmpty()) return false;
 
@@ -94,9 +92,7 @@ public class Person {
                 return false;
             }
         }
-
-
-
+        // 5. мин 1 спецсимвол (! % $ @ & *)
         for (int i = 0; i < password.length(); i++) {
             char b = email.charAt(i);
             if (!(Character.isAlphabetic(b)
@@ -110,10 +106,7 @@ public class Person {
             ))
                 return false;
         }
-
-
         return true;
-
 
     }
     /*

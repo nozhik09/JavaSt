@@ -5,8 +5,8 @@ public class PersonApp {
         Person person = new Person("email ", " df");
         System.out.println(person);
         //JUnit Jupiter or TestNG(early)
-        person.setEmail("vladn09@gmail.com");
-        person.setPassword(" sa");
+        person.setEmail("vdsadas@dsad.ad");
+
         System.out.println(person);
 
 
