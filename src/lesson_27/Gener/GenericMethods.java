@@ -1,4 +1,4 @@
-package lesson_27;
+package lesson_27.Gener;
 
 public class GenericMethods {
 
