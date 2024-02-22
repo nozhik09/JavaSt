@@ -25,17 +25,17 @@ public class Person {
     }
 
     /*
-    1. @ должна присутсвовать и должен быть толкко 1
+    1. @ должна присутствовать и должен быть только 1
     2. Точка после собаки
     3. Точка не может быть сразу после собаки
-    4. После последжней точки должно быть не менее 2 символов
+    4. После последней точки должно быть не менее 2 символов
     5. символы алфавита цифры и  '_' '.' '@'
     6. Место для @ - хотя бы один символ до собаки.
 
      */
 
     private boolean isEmailValid(String email) {
-        // 0. проверяем что что-то ввлели
+        // 0. проверяем что что-то ввели
         if (email == null || email.isEmpty()) return false;
         //1. @ ||
         int indexAt = email.indexOf('@');
@@ -73,6 +73,7 @@ public class Person {
             this.password=password;
         }
     }
+
     private boolean isPasswordValid(String password) {
         if (password==null || password.isEmpty()) return false;
 
