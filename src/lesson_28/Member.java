@@ -1,13 +1,12 @@
-package lesson_27.lesson2;
+package lesson_28;
 
-public class Person {
-
+public class Member {
     private String email;
 
     private String password;
 
 
-    public Person(String email, String password) {
+    public Member(String email, String password) {
         setEmail(email);
         setPassword(password);
     }
@@ -128,3 +127,9 @@ public class Person {
                 '}';
     }
 }
+
+
+
+
+
+
