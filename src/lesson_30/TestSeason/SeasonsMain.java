@@ -1,4 +1,4 @@
-package lesson_30.TestSeasont;
+package lesson_30.TestSeason;
 
 public class SeasonsMain {
     public static void main(String[] args) {
