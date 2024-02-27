@@ -6,7 +6,7 @@ public class SeasonsMain {
         Seasons[] season = Seasons.values();
         for (Seasons seasons : Seasons.values()) {
             System.out.print(seasons + " ");
-            System.out.println(seasons.getAverageTemp());
+            System.out.println("AverageTemp " + seasons.getAverageTemp());
         }
 
 

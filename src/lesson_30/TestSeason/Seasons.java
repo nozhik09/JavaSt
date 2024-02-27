@@ -61,4 +61,5 @@ public enum Seasons {
     public void setAverageTemp(double averageTemp) {
         this.averageTemp = averageTemp;
     }
+
 }
