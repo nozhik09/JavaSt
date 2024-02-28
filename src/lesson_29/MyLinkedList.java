@@ -1,6 +1,6 @@
 package lesson_29;
 
-import lesson_30.HW_29.MyQueue;
+import lesson_29.HW_29.MyQueue;
 
 import java.lang.reflect.Array;
 

@@ -1,4 +1,4 @@
-package lesson_30.HW_29;
+package lesson_29.HW_29;
 
 import lesson_25HW_24.MyArrayList;
 import lesson_25HW_24.MyList;

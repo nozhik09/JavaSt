@@ -1,4 +1,4 @@
-package lesson_30.HW_29;
+package lesson_29.HW_29;
 
 public interface MyQueue<T>{
     T getFirst(); // значение "головы" списка

@@ -1,0 +1,62 @@
+создать коллекцию для хранения данных о книгах
+каждая книга имеет уникальный ISBN , название и автора
+
+При этом Автор имеет два параметра - имя фамилию
+
+создать коллекцию для хранения данных о читателях
+
+
+
+
+
+
+
+
+- Reader
+  - Ineger readerId
+  - String readerName
+
+- Book
+  -Integer isbn;
+  -String title;
+  -Author author;
+
+
+-Author
+  - String firstName
+  -String secondName
+
+  -reposytories<book>
+  -reposytories<reader>
+
+
+  Var1
+  мы можем создать класс BookByReader в котором будет всего два поля:
+     -Integer readerId;
+     -Integer bookId;
+  repository MyList<BookByReader>
+
+
+  какие преимущесьва и НЕДОСТАТКИ есть у этого варианта?
+  Преимущесотва: наглядость, легко добавить/удалять запись
+
+
+ Недостатки: для получения полной инфо о кнгие и читателю необходимо
+ -пройтись по списку книг, сравнить Id у каждой кнги с нашим Id в записи
+ -пройтись по списку читателей, сравнить Id у каждого читателей с нашим Id в записи
+
+
+ ВАРИАНТ 2:
+ добавить в класс Reader спеисок взятых ЭТИМ читателем книг
+
+ -Reader
+    -Integer readerId
+    -String readerName
+    -MyList<Book>
+
+
+
+
+
+
+
