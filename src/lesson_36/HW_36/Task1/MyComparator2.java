@@ -1,4 +1,4 @@
-package lesson_36.HW_36.Task2;
+package lesson_36.HW_36.Task1;
 
 import java.util.Arrays;
 import java.util.Comparator;

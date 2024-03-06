@@ -19,6 +19,7 @@ public class MyComparator implements Comparator<Integer> {
 
     public static void main(String[] args) {
         Integer[] integers = { 1, 6, 5, 4, 7, 8, 9, 2, 7, 3 };
+//        MyComparator myComparator = new MyComparator();
         Arrays.sort(integers,new MyComparator());
         System.out.println(Arrays.toString(integers));
     }
