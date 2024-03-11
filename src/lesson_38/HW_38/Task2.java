@@ -3,6 +3,7 @@ package lesson_38.HW_38;
 import java.util.*;
 
 public class Task2 {
+
     public static void main(String[] args) {
         Set<String> set1 = new HashSet<>(List.of("Java", "Python", "C++", "C#"));
         Set<String> set2 = new HashSet<>(List.of("Python", "Kotlin", "Java", "JavaScript"));
