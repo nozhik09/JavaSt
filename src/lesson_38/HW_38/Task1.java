@@ -5,20 +5,18 @@ import java.util.*;
 
 public class Task1{
     public static void main(String[] args) {
-        String testString = "Тестовая строка для удаления слов, которые повторяются. строка для удаления !";
+        String testString = "Тестовая вы строка для удаления слов, которые повторяются. строка для удаления !";
         System.out.println(getUniqueSortedWords(testString));
     }
 
     public static List<String> getUniqueSortedWords (String testString) {
         String[] words = testString.split("\\s+");
 
-        Set<String> uniqueWords = new HashSet<>();
+        Set<String> uniqueWords = new TreeSet<>(Comparator.comparing(String::length));
         for (String word : words){
             uniqueWords.add(word);
         }
-        List<String> sortedWords = new ArrayList<>(uniqueWords);
-        sortedWords.sort(Comparator.comparingInt(String::length));
-        return sortedWords;
+        return new LinkedList<>(uniqueWords);
     }
 
 
