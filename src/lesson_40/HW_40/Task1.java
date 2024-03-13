@@ -1,7 +1,5 @@
 package lesson_40.HW_40;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -23,16 +21,17 @@ public class Task1 {
 
 
 private static List<Integer> filterListIntegers(List<Integer> integers){
-//    Predicate<Integer> isEven = integer -> integer%2==0;
-//    Predicate<Integer> more10 = integer -> integer>10;
-//    Predicate<Integer> less100 = integer -> integer<100;
-//    List<Integer> filter  = integers.stream().filter(isEven.and(more10).and(less100)).collect(Collectors.toList());
-//    System.out.println(filter);
+    Predicate<Integer> isEven = integer -> integer%2==0;
+    Predicate<Integer> more10 = integer -> integer>10;
+    Predicate<Integer> less100 = integer -> integer<100;
+    List<Integer> filter  = integers.stream().filter(isEven.and(more10).and(less100)).collect(Collectors.toList());
+    System.out.println(filter);
 
-    List<Integer> allFiltr = integers.stream().filter(integer -> integer%2==0 && integer>10 && integer<100).collect(Collectors.toList());
-    System.out.println(allFiltr);
+//    List<Integer> allFiltr = integers.stream().filter(integer -> integer%2==0 && integer>10 && integer<100).collect(Collectors.toList());
 
-    return allFiltr;
+    System.out.println(filter);
+
+    return filter;
 }
 
 
