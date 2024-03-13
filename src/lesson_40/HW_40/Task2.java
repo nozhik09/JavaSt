@@ -9,9 +9,6 @@ public class Task2 {
     затем преобразует её в верхний регистр, и в конце
     считает количество символов в измененной строке
      */
-
-
-
     public static void main(String[] args) {
         String text = "Строка для проверки количества вхождений слов" +
                 ".\n Строка для проверки и теста. и количества слов для проверки теста";
@@ -22,11 +19,6 @@ public class Task2 {
 //        Function<String,Integer> counting = String::length;
 //        Function<String,Integer> concatenation = deleteSpace.andThen(toUpperCase).andThen(counting);
         Function<String,Integer> all = str-> str.replace(" ","").toUpperCase().length();
-
-
         System.out.println(all.apply(text));
     }
-
-
-
 }

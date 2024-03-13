@@ -23,8 +23,6 @@ public class PersonMain {
         System.out.println(filterPerson);
     }
 
-
-
     private static List<Persons> getListPerson() {
 
 
