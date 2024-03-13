@@ -8,7 +8,7 @@ public class Task4 {
 
     public static void main(String[] args) {
 
-        List<String> stringList = List.of("Apple", "Banana", "Apricot", "Avocado", "Cherry");
+        List<String> stringList = List.of("Apple", "Banana", "Apricot", "Avocado", "Cherry","Apricot");
 
         List<String> filtrString = stringList.stream()
                 .filter(str -> str.startsWith("A"))

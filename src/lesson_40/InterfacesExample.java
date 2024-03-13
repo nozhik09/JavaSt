@@ -54,7 +54,7 @@ public class InterfacesExample {
         Function<String,String> concatenate = s->s+"!!!";
         Function<String,String> combinedFunc=toUpperCase.andThen(concatenate);
         String result1 = combinedFunc.apply("Hello");
-        System.out.println(result1);
+        System.out.println("result1-> " + result1);
 
 
 
